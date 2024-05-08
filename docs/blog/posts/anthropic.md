@@ -26,7 +26,7 @@ import anthropic
 import instructor
 
 # Patching the Anthropics client with the instructor for enhanced capabilities
-anthropic_client = instructor.from_openai(
+anthropic_client = instructor.from_anthropic(
     create=anthropic.Anthropic().messages.create,
     mode=instructor.Mode.ANTHROPIC_JSON
 )
